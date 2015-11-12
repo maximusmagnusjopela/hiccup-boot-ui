@@ -1,3 +1,7 @@
+body {
+   background-color: #330000;
+}
+
 .page-header {
     margin-top:27px;
     border-bottom-color: #FF0000;
@@ -31,12 +35,48 @@ a:hover .caret {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 120px;
     background-color: #3d0000;
     color:white;
-    padding-top:10px;
+    padding-top:25px;
 }
 
+.jumbotron {
+    background-image: url("file:///home/dev/Documents/Picture/imperialsys/red_sphere_fit.png");
+    background-size:cover;
+    background-color:black;
+    min-height:500px;
+}
+
+.jumbotron h1 {
+    font-size:90px;
+    margin-top:50px;
+}
+
+.jumbotron h2 {
+    margin-top:35px;
+}
+
+.jumbotron .btn {
+    margin-top:35px;
+    border: 3px solid white;
+
+}
+
+.btn a:hover {
+    background:transparent;
+}
+
+.btn{
+
+    background: transparent;
+    color: #F2F2F2;
+
+    /* CSS Transition */
+    -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -ms-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+}

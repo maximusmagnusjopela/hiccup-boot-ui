@@ -23,17 +23,16 @@
 
 (defn jumbo
   [content]
-  [:div.jumbotron
-   [:div.container content]])
+  [:div.jumbotron.text-center content])
 
 (defn footer
   [content]
   [:footer.footer 
    [:div.container
-    [:p.text-muted content]]])
+    [:p.text-right content]]])
 
 (->> (base "Imperial Systems Corporation"
-      [:div.container [:div.page-header [:img.center-block {:src "/home/dev/Documents/Picture/Imperial_Sys_optimized.svg"}]]]
+      [:div.container [:div.page-header [:img.center-block {:src "file:///home/dev/Documents/Picture/imperialsys/Imperial_Sys_optimized.svg"}]]]
       (nav-bar [["Services" 
                  {:text "Consulting" 
                   :link "http://google.com"}
@@ -46,10 +45,10 @@
                  {:text "Contact" :link "http://has-jobs.com"}
                  {:text "Investors" :link "http://has-jobs.com"}
                  {:text "Chief Executive Officer" :link "http://has-jobs.com"}]])
-      (jumbo [:h1 "Imperial Systems Corporation" 
-              [:p "We build information systems that power the future"]]) 
-      [:div.container [:h1 "Consulting"] [:p "Elite consulting services"]]
-      (footer "Imperial information systems &copy; 2015"))
+      (jumbo [:h1 "Humanity's Future Technologies" 
+              [:h3 "We build the information systems that power tomorrow's world"]
+              [:a.btn.btn-default.btn-lg {:href "#"} "Discover our vision"]]) 
+      [:div.container [:h1 "Consulting"] [:p "Elite consulting services"]])
     html5
     (spit "index.html"))
 
