@@ -36,7 +36,6 @@
     [:ul.dropdown-menu
      (interpose [:li.divider {:role "separator"}] drop-items)]])))
 
-
 (nav-render ["careers" 
              {:text "jobs" :link "http://jobs.com"}
              {:text "work culture" :link "http://workculture.com"}])

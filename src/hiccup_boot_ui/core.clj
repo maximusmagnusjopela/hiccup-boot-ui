@@ -21,6 +21,38 @@
      [:ul.nav.navbar-nav
       (for [c components] (nav-render c))]]]])
 
+(defn marketing-column
+  "Creates a marketing column"
+  [col-class {:keys [img heading text link]}]
+  (let [{url :url link-text :text} link]
+    [:div {:class col-class}
+     [:img {:src img :alt "image"}]
+     [:h2 heading]
+     [:p text]
+     [:p [:a.btn.btn-default link-text]]]))
+
+(marketing-column "col-lg-4" 
+                  {:img "image.png"
+                   :heading "some heading"
+                   :text "some text"
+                   :link {:url "http://google.com" :text "this is google"}})
+
+
+(defn marketing-row
+  "creates a marketing row that contains a collection of marketing column"
+  [marketing-columns]
+  (let [coll-class (->> marketing-columns 
+                        count
+                        (str "col-lg-"))]
+    [:div.row 
+     (for [c marketing-columns] (marketing-column coll-class c))]))
+
+;todo IMPLEMENT THIS
+(defn marketing
+  "returns a marketing columnar data structure"
+  [market-columns]
+  nil)
+
 (defn jumbo
   [content]
   [:div.jumbotron.text-center content])
