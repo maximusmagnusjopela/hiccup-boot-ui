@@ -45,8 +45,8 @@
                  {:text "Contact" :link "http://has-jobs.com"}
                  {:text "Investors" :link "http://has-jobs.com"}
                  {:text "Chief Executive Officer" :link "http://has-jobs.com"}]])
-      (jumbo [:h1 "Humanity's Future Technologies" 
-              [:h3 "We build the information systems that power tomorrow's world"]
+      (jumbo [:h1 "Creating Future Technologies" 
+              [:h3 "We build the information systems that will power the world of tomorrow"]
               [:a.btn.btn-default.btn-lg {:href "#"} "Discover our vision"]]) 
       [:div.container [:h1 "Consulting"] [:p "Elite consulting services"]])
     html5

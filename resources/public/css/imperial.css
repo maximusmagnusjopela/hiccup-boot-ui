@@ -58,6 +58,10 @@ a:hover .caret {
     margin-top:35px;
 }
 
+.jumbotron h3 {
+    text-shadow:2px 2px 2px #000000;
+}
+
 .jumbotron .btn {
     margin-top:35px;
     border: 3px solid white;
